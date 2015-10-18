@@ -44,7 +44,7 @@ public final class BinaryStdOut {
     private static void writeBit(boolean bit) {
         // add bit to buffer
         buffer <<= 1;
-        if (bit) buffer |= 1;
+        if (bit) buffer |= 1;//?
 
         // if buffer is full (8 bits), write out as a single byte
         N++;
@@ -75,7 +75,8 @@ public final class BinaryStdOut {
     private static void clearBuffer() {
         if (N == 0) return;
         if (N > 0) buffer <<= (8 - N);
-        try { out.write(buffer); }
+        try { out.write(buffer);
+          }
         catch (IOException e) { e.printStackTrace(); }
         N = 0;
         buffer = 0;
@@ -141,8 +142,11 @@ public final class BinaryStdOut {
         if (r < 1 || r > 32)        throw new IllegalArgumentException("Illegal value for r = " + r);
         if (x < 0 || x >= (1 << r)) throw new IllegalArgumentException("Illegal " + r + "-bit char = " + x);
         for (int i = 0; i < r; i++) {
+       
             boolean bit = ((x >>> (r - i - 1)) & 1) == 1;
+
             writeBit(bit);
+
         }
     }
 

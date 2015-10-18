@@ -29,7 +29,10 @@ public class LZW {
         int code = R+1;  // R is codeword for EOF
 
         while (input.length() > 0) {
+              System.err.println("W : " + W + ", input length: " + input.length() + ", Number OF codewords: " + code + ", L: " + L );
+
             String s = st.longestPrefixOf(input);  // Find max prefix match s.
+
             BinaryStdOut.write(st.get(s), W);      // Print s's encoding.
             int t = s.length();
             if (t < input.length() && code < L)    // Add s to symbol table.

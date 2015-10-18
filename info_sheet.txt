@@ -6,20 +6,20 @@ You must submit an information sheet with every assignment.  Also be sure
 to submit all materials following the procedures described on the
 submission procedures page.
 
-Name:  
+Name:  Hao Wu
 
-Lecture section:  
+Lecture section:  CS1501
 
-Recitation day and time:  
+Recitation day and time:  Friday 2:00-3:00pm
 
-Assignment #:  
+Assignment #:  2
 
-Program due date:  
+Program due date:  Oct 17,2015
 
-Handed in date:  
+Handed in date:  Oct 17
 
 Source code file name(s):
-
+MyLZW.java 
 
 
 
@@ -34,12 +34,12 @@ Other file name(s) (if relevant):
 
 
 
-Does your program run without error?:
+Does your program run without error?:No
 
 If not, what is/are the error(s) and which parts of your program run
 correctly?:
-
-
+Do Nothing Mode and Reset Mode encode and decode correctly.
+My Monitor encoding part seems wrong. It takes unusual time to encode “all.tar” file and generate more large size than original file. And my decoding part of Monitor mode fails too.
 
 
 
