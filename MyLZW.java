@@ -278,32 +278,7 @@ public class MyLZW {
              
           /**
          
-            BinaryStdOut.write(val);
-             if((i==65536-1) || (monitor==true)){
-                if(monitor==true){
-                    if((oldR/cR)>1.1){
-                        System.err.print("Ration of Compression Radio is over 1.1, reset array");
-
-                    st=new String[65536];
-                    for(i=0;i<R;i++)
-                         st[i]=""+(char)i;
-                    st[i++] = "";  
-        
-
-                      W=9;
-                      L=(int)Math.pow(2,W);
-                      codeword = BinaryStdIn.readInt(W);
-                      val = st[codeword];
-                      monitor=false;
-                      readin=0;
-                      compressed=0;
-                    }
-                }else{
-                    oldR=cR;
-                    monitor=true;
-                }
-                      
-                    }
+           
            **/
             codeword = BinaryStdIn.readInt(W);
             compressed+=W;
